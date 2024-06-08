@@ -1,0 +1,17 @@
+import numpy as np
+
+# use the sigmoid function because it exists between 0 and 1
+
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+
+# Refer to the training example https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1 and change the values for practicing purposes.
+
+training_inputs = np.array([0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 0, 1])
+
+# input the .T function at the end to change the matrix from horizontal to vertical
+training_outputs = np.array([0, 1, 1, 0]).T
+
+np.random.seed(1)
